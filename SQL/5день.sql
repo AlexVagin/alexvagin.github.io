@@ -23,8 +23,8 @@ create table dbo.Products (
 	[created_at]	datetime
 );
 
-insert into Products values (1,'хлеб','белый', 27.6, CURRENT_TIMESTAMP);
-insert into Products values (2,'молоко','жирное', 45, 2019-10-13)
+insert into Products values (1,'ГµГ«ГҐГЎ','ГЎГҐГ«Г»Г©', 27.6, CURRENT_TIMESTAMP);
+insert into Products values (2,'Г¬Г®Г«Г®ГЄГ®','Г¦ГЁГ°Г­Г®ГҐ', 45, 2019-10-13)
 
 
 
