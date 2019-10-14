@@ -1,0 +1,13 @@
+/* http://sql-ex.ru/learn_exercises.php#answer_ref
+#40
+Найти производителей, которые выпускают более одной модели, 
+при этом все выпускаемые производителем модели являются 
+продуктами одного типа.
+Вывести: maker, type 
+*/
+
+SELECT maker, MAX(type)
+FROM product
+GROUP BY maker
+HAVING count(distinct type)=1
+AND count(model)>1

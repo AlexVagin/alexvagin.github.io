@@ -1,0 +1,12 @@
+/* http://sql-ex.ru/learn_exercises.php#answer_ref
+#38
+Найдите страны, имевшие когда-либо классы обычных боевых кораблей ('bb') 
+и имевшие когда-либо классы крейсеров ('bc'). 
+*/
+
+SELECT bb.country 
+FROM Classes as bb
+WHERE type = 'bb'
+INTERSECT
+SELECT bc.country FROM Classes as bc
+WHERE type = 'bc'
