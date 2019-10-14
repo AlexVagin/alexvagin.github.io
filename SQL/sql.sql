@@ -1,6 +1,7 @@
 SELECT * FROM Customers
 where City like 'L%o_';
 
+
 SELECT
                 City,
                 Country,
